@@ -1,0 +1,28 @@
+** Project name: Azura Blade
+
+** Description: a text-based adventure game where you control your character using only some basic commands
++ Just a small project to kill boredom
+
+** Setup
+
+* Character controls:
+> 'look': Observe surroundings, will output the directions that player can take. Cost no turn
+> 'select [targetName]' | 'sel [targetName]' : selects the target entity for action. Cost no turn
+> 'attack' | 'atk': attack selected target. Cost 1 turn
+> 'defend' | 'def': increase resistance to damage and increases counterChance by 30%. Cost 1 turn
+> 'skill list' | 'skills': List all player's skills and thri cost. Cost no turn
+> 'skill [skilName]': Use skillName (turn cost depends on skill, will use no turn if player does not have enough sp)
+
+
+* General mechanics:
+> HP: hit points, gameoever when this hit 0
+> SP: skill points, increases when attacking and when receiving attacks
+> MP: fully recover on every new encounter
+> Turns: Will increase as the player and the take action. However, both player and enemy will gain more moves/mechanics as the number of turn increases. But turn count will be made seperate for each entity in a battle. 
+
+* Overall direction
+- Roguelike
+- Player would likely have the ability to rush down and clear small encounters quite fast but will have more to consider when going against bosses as they have to deal with MP management
+- Resources gain through encounters would be straight stat buffs or new equipments
+
+

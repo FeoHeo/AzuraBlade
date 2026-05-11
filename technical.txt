@@ -1,0 +1,27 @@
+** Structuring
+- Gotta build a little 2d space first that would allow players to move around in. Can make a graph for this that functions like a ches board.
+- Just strating out so make a 10x10 map
+- Also should allow players to print out map as well
+
+** Tiles:
+> [] : Undiscovered tile (move to this to discover)
+> [o]: Tile with player character
+> [x]: Tile with enemies
+> [v]: Cleared tile
+> [::]: Wall tile
+
+** Things needed
+- Enemy node
+- TileType node 
+- Map generator
+- Base enemy data type and general stats
+
+
+** Connections
+[Enemy list] -> [Enemy node] -> [Enemy unique stat table]
+                             -> [Enemy unique mechanic] (add later)
+
+
+
+
+
