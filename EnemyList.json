@@ -1,8 +1,17 @@
-{
+[{
     "id": "0",
     "name": "zombie",
     "HP": 10,
     "MP":0,
     "Atk": 2,
     "Def": 0
+},
+{
+    "id":"1",
+    "name":"wizard",
+    "HP":5,
+    "MP":10,
+    "Atk":4,
+    "Def":2
 }
+]
