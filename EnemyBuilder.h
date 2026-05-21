@@ -1,15 +1,18 @@
 #ifndef ENEMY_BUILDER
 #define ENEMY_BUILDER
 
+#include <string>
 #include "EntityBaseStruct.h"
+#include <fstream>
+#include <vector>
 
 class EnemyBuilder
 {
 private:
-    int enemyId;
-    EntityBaseStruct entityBase;
+    std::vector<EntityBaseStruct> enemyStruct = std::vector<EntityBaseStruct>();
+    std::basic_ifstream<char> enemyList;
 public:
-    EnemyBuilder(/* args */);
+    EnemyBuilder(std::string initList);
     ~EnemyBuilder();
 };
 
