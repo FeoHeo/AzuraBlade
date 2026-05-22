@@ -11,9 +11,9 @@ using json = nlohmann::json;
 
 EnemyNode::EnemyNode(int enemyId)
 {
-    std::ifstream enemyList("EnemyList.json");
+    std::ifstream List("EnemyList.json");
     
-    json eList = json::parse(enemyList);
+    json eList = json::parse(List);
 
 
 }

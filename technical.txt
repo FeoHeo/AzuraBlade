@@ -18,8 +18,20 @@
 
 
 ** Connections
-[Enemy list] -> [Enemy node] -> [Enemy unique stat table]
+[Enemy list] -> [Enemy node] -> [Enemy base stat table]
                              -> [Enemy unique mechanic] (add later)
+
+
+** Current:
+- [EnemyBuilder]: Initialize and read BaseList when constructed
+
+
+** structures
+
+[Builder]: Param {EnemyList}
+    -> Append Base stat to base in the Builder
+[Builder.build(id)]
+    -> Returns select enemy id as {Enemynode}
 
 
 
