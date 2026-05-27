@@ -1,15 +1,18 @@
 #ifndef ENEMY_NODE
 #define ENEMY_NODE
 
-#include "EnemyBuilder.h"
 #include "EntityBaseStruct.h"
 
 class EnemyNode
 {
 private:
-    EntityBaseStruct enemy;
+    EntityBaseStruct enemyBaseStats;
 public:
-    EnemyNode(int enemyId);
+    // Debug functions
+    void PrintBaseStats();
+
+    EnemyNode(EntityBaseStruct baseStatsInpupt);
+
     ~EnemyNode();
 };
 

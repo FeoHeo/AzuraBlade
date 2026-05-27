@@ -13,7 +13,7 @@ private:
     std::basic_ifstream<char> List;
 public:
     EnemyBaseList(std::string initList);
-    EntityBaseStruct get(int id);
+    EntityBaseStruct get(int enemyId);
     ~EnemyBaseList();
 };
 

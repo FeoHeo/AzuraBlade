@@ -1,4 +1,3 @@
-#include "json/single_include/nlohmann/json.hpp"
 #include <fstream>
 #include <map>
 #include <iostream>
@@ -6,17 +5,19 @@
 #include "EnemyNode.h"
 #include "EntityBaseStruct.h"
 
-using namespace std;
-using json = nlohmann::json;
-
-EnemyNode::EnemyNode(int enemyId)
+EnemyNode::EnemyNode(EntityBaseStruct baseStatsInput)
 {
-    std::ifstream List("EnemyList.json");
-    
-    json eList = json::parse(List);
-
-
+    enemyBaseStats = baseStatsInput;
 }
+
+void EnemyNode::PrintBaseStats() {
+    std::cout << " Id: " << enemyBaseStats.BaseId << "\n"
+            << " Name: " << enemyBaseStats.BaseName << "\n"
+            << " HP: " << enemyBaseStats.BaseHP << "\n"
+            << " MP: " << enemyBaseStats.BaseMP << "\n"
+            << " Atk: " << enemyBaseStats.BaseAtk << "\n"
+            << " Def: " << enemyBaseStats.BaseDef << "\n";   
+};
 
 EnemyNode::~EnemyNode()
 {
